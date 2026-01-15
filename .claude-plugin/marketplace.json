@@ -18,7 +18,8 @@
       },
       "license": "LICENSE.txt",
       "keywords": ["react", "typescript", "tailwind", "frontend", "shadcn"],
-      "category": "development"
+      "category": "development",
+      "strict": false
     },
     {
       "name": "react-fullstack",
@@ -30,7 +31,8 @@
       },
       "license": "LICENSE.txt",
       "keywords": ["react", "trpc", "drizzle", "supabase", "fullstack", "api"],
-      "category": "development"
+      "category": "development",
+      "strict": false
     },
     {
       "name": "create-react-project",
@@ -42,7 +44,8 @@
       },
       "license": "LICENSE.txt",
       "keywords": ["react", "scaffold", "boilerplate", "generator", "create-app"],
-      "category": "tools"
+      "category": "tools",
+      "strict": false
     },
     {
       "name": "docs",
@@ -54,7 +57,8 @@
       },
       "license": "LICENSE.txt",
       "keywords": ["documentation", "docs", "readme", "claude-md", "index", "generator"],
-      "category": "tools"
+      "category": "tools",
+      "strict": false
     }
   ]
 }

@@ -9,23 +9,25 @@
   },
   "plugins": [
     {
-      "name": "react-skills",
-      "description": "React development skills for frontend and fullstack applications with React 18+, TypeScript, Tailwind CSS, tRPC, Drizzle ORM, and Supabase",
+      "name": "reactjs-development",
+      "description": "React development skills and project scaffolding for frontend and fullstack applications with React 18+, TypeScript, Tailwind CSS, tRPC, Drizzle ORM, and Supabase",
       "source": "./",
       "strict": false,
       "skills": [
         "./plugins/react-frontend",
         "./plugins/react-fullstack"
+      ],
+      "commands": [
+        "./plugins/create-react-project/commands"
       ]
     },
     {
-      "name": "dev-tools",
-      "description": "Development tools including project scaffolding and documentation generation",
+      "name": "docs",
+      "description": "Generate project documentation (docs/, CLAUDE.md, PROJECT_INDEX.json)",
       "source": "./",
       "strict": false,
       "commands": [
-        "./plugins/docs/commands",
-        "./plugins/create-react-project/commands"
+        "./plugins/docs/commands"
       ]
     }
   ]

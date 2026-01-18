@@ -11,22 +11,21 @@ Add the marketplace and install plugins in Claude Code:
 /plugin marketplace add jlmortola/claude-helpers
 
 # Install plugins
-/plugin install react-skills@claude-helpers
-/plugin install dev-tools@claude-helpers
+/plugin install reactjs-development@claude-helpers
+/plugin install docs@claude-helpers
 ```
 
 ## Available Plugins
 
-### react-skills
+### reactjs-development
 
-**Type:** Skills (auto-activate based on context)
+**Type:** Skills + Command
 
-Bundled React development skills:
+Complete React development toolkit:
 
-#### react-frontend
+#### Skills (auto-activate based on context)
 
-Frontend patterns for React 18+, TypeScript, Tailwind CSS, and shadcn/ui:
-
+**react-frontend** - Frontend patterns for React 18+, TypeScript, Tailwind CSS, and shadcn/ui:
 - Component patterns and props typing
 - Custom hooks and state management
 - TanStack Query and Zustand patterns
@@ -34,44 +33,19 @@ Frontend patterns for React 18+, TypeScript, Tailwind CSS, and shadcn/ui:
 - Performance optimization
 - Accessibility
 
-#### react-fullstack
-
-Fullstack development with tRPC, Drizzle ORM, and Supabase Auth:
-
+**react-fullstack** - Fullstack development with tRPC, Drizzle ORM, and Supabase Auth:
 - tRPC procedure creation
 - Database operations with Drizzle
 - Authentication flows
 - Permission system
 - Security best practices
 
----
+#### Command
 
-### dev-tools
-
-**Type:** Commands
-
-Development tools for project setup and documentation:
-
-#### docs:create
-
-Generate project documentation automatically.
+**init** - Interactive project scaffolding wizard:
 
 ```bash
-/dev-tools:create
-```
-
-Features:
-- Creates `docs/` folder with architecture, development, API docs
-- Generates `CLAUDE.md` quick reference
-- Optionally creates `PROJECT_INDEX.json` for codebase analysis (requires Python)
-- Uses git to detect changes and only update affected docs
-
-#### init
-
-Interactive project scaffolding wizard.
-
-```bash
-/dev-tools:init my-app
+/reactjs-development:init my-app
 ```
 
 Supports:
@@ -81,12 +55,30 @@ Supports:
 - shadcn/ui setup
 - Testing configuration
 
+---
+
+### docs
+
+**Type:** Command
+
+Generate project documentation automatically.
+
+```bash
+/docs:create
+```
+
+Features:
+- Creates `docs/` folder with architecture, development, API docs
+- Generates `CLAUDE.md` quick reference
+- Optionally creates `PROJECT_INDEX.json` for codebase analysis (requires Python)
+- Uses git to detect changes and only update affected docs
+
 ## Local Development
 
 Test plugins without installing:
 
 ```bash
-claude --plugin-dir /path/to/mortolabs
+claude --plugin-dir /path/to/claude-helpers
 ```
 
 ## Documentation

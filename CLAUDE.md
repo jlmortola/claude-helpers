@@ -9,8 +9,8 @@ Claude Code plugin marketplace for React development skills and commands.
 /plugin marketplace add jlmortola/claude-helpers
 
 # Install plugins
-/plugin install react-skills@claude-helpers
-/plugin install dev-tools@claude-helpers
+/plugin install reactjs-development@claude-helpers
+/plugin install docs@claude-helpers
 
 # Test locally
 claude --plugin-dir ./
@@ -20,20 +20,20 @@ claude --plugin-dir ./
 
 | Plugin | Contains | Type |
 |--------|----------|------|
-| `react-skills` | react-frontend, react-fullstack | Skills (auto-trigger) |
-| `dev-tools` | docs, create-react-project | Commands |
+| `reactjs-development` | react-frontend, react-fullstack skills + create-react-project command | Skills + Command |
+| `docs` | documentation generator | Command |
 
-### react-skills
+### reactjs-development
 
 Auto-triggers on React/UI and API/backend work. Includes:
 - **react-frontend**: React 18+, TypeScript, Tailwind, shadcn/ui patterns
 - **react-fullstack**: tRPC, Drizzle ORM, Supabase Auth patterns
+- **init command**: `/reactjs-development:init` - Scaffold new React projects
 
-### dev-tools
+### docs
 
-Commands for project setup and documentation:
-- `/dev-tools:create` - Generate docs/, CLAUDE.md, PROJECT_INDEX.json
-- `/dev-tools:init` - Scaffold new React projects
+Generate project documentation:
+- `/docs:create` - Creates docs/, CLAUDE.md, PROJECT_INDEX.json
 
 ## Directory Structure
 
